@@ -1,0 +1,23 @@
+<div class="center">
+	<h1>Articles</h1>
+</div>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Article</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each model as |article|}}
+			<tr>
+				<td>
+					{{link-to article.name "articles.show" article}}
+				</td>
+				<td>
+					<button {{action "delete" article}} class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+				</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

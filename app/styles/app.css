@@ -1,0 +1,32 @@
+[data-ember-action] {
+	cursor: pointer;
+}
+
+a:hover, a:focus {
+	color: #000000;
+	text-decoration: none;
+}
+
+a {
+	color: #000000;
+}
+
+.icon_align { 
+	position: absolute;
+	padding-top: 18px;
+	text-indent: 1em;
+}
+
+.icon_align2 { 
+	padding-top: 18px;
+	text-indent: 1em;
+}
+
+.tab {
+	text-indent: 2em;
+}
+
+.tab2 {
+	text-indent: 1em;
+	float: right;
+}

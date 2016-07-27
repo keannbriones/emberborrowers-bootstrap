@@ -1,0 +1,23 @@
+<div class="center">
+	<h1>Friends</h1>
+</div>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th {{action setSortBy "first-name"}}>Name</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each model as |friend|}}
+			<tr>
+				<td>
+					{{link-to friend.fullName "loans" friend}}
+				</td>
+				<td>
+					<button {{action "delete" friend}} class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+				</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

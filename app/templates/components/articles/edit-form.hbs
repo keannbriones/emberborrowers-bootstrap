@@ -1,0 +1,17 @@
+<form {{action "save" on="submit"}} class="form-horizontal">
+	<div class="row">
+		<div class="form-group">
+		    {{#if errorMessage}}
+		      <h2 class="text-danger">{{errorMessage}}</h2>
+		    {{/if}}
+		</div>
+		<div class="form-group">
+		    <label for="inputFirstName">Article Name</label>
+		    {{input type="text" class="form-control" id="inputFirstName" placeholder="Article Name" value=model.name}}
+		</div>
+		<div class="text-right col-xs-12 col-sm-12">
+		  <button type="submit" class="btn btn-primary">{{fa-icon "check"}} Save</button>
+		  <button class="btn btn-default" {{action "cancel"}}>{{fa-icon "remove"}} Cancel</button>
+		</div>
+	</div>
+</form>

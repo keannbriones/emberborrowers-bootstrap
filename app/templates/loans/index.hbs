@@ -1,0 +1,19 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Article</th>
+			<th>Notes</th>
+			<th>Borrowed Since</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each model as |loan|}}
+			{{ loans/loan-row
+				loan=loan
+				save=(action save)
+			}}
+		{{/each}}
+	</tbody>
+</table>
